@@ -774,7 +774,6 @@ class: center,split-two
 * Define `\(f_\phi(x) = g(\phi(z,y))\)`
 ]]]]
 
-
 ---
 
 class: show-10
@@ -798,6 +797,117 @@ count: false
 **.purple[Theorem.]** `\(\{ f_\phi\!:\!\phi\!\in\!\Phi \}\)` admits `\(\beta\)`-equivalence for 
 `\(\Phi := \Big\{ \phi\!:\!\!\displaystyle\int_{\mathcal Z}\!{\!\Psi\left( \big\lvert \text{det}J_{\phi_z^{-1}} \big\rvert  \right)\!\mu(dz)}\!=\!1 \Big\}\)`
 ]]
+
+
+---
+layout: false
+
+# Statistical Invariance - II : .red[Example]
+
+For `\(\boldsymbol{x} = \left( r\cos\theta, r\sin\theta \right) \in \mathbb R^2\)` define `\(\{ f_\rho: |\rho| &lt; 1 \}\)` on `\(\mathcal X = \mathbb R^2\)` by
+.small[.center[.content-box-red[
+$$
+f_\rho(\boldsymbol x) =  \frac{1}{2\pi} \exp\left({\frac{-r^2}{2(1+\rho\cos\theta)}}\right)
+$$
+]]]
+
+
+---
+count: false
+layout: false
+
+# Statistical Invariance - II : .red[Example]
+
+For `\(\boldsymbol{x} = \left( r\cos\theta, r\sin\theta \right) \in \mathbb R^2\)` define `\(\{ f_\rho: |\rho| &lt; 1 \}\)` on `\(\mathcal X = \mathbb R^2\)` by
+.small[.center[.content-box-red[
+$$
+f_\rho(\boldsymbol x) =  \frac{1}{2\pi} \exp\left({\frac{-r^2}{2(1+\rho\cos\theta)}}\right)
+$$
+]]]
+
+.small[
+1. Suppose `\(\mathcal Z = \mathcal S^{1}\)` with the normalized surface measure `\(\mu\)`
+2. `\(g\)` is a density on `\(\mathcal Y = \mathbb{R}_+\)`, and for `\(|{\rho}| &lt; 1\)`, `\(\xi_\rho: \mathcal S^1 \rightarrow \mathbb R_+\)` are given by
+$$
+g(r) = \frac{1}{2\pi} \exp\left({-\frac{r^2}{4\pi}}\right) \hspace{2cm} \text{and} \hspace{2cm} \xi_\rho(\theta) = \sqrt{\frac{2\pi}{1+\rho\cos(\theta)}}
+$$
+]
+
+---
+count: false
+layout: false
+
+# Statistical Invariance - II : .red[Example]
+
+For `\(\boldsymbol{x} = \left( r\cos\theta, r\sin\theta \right) \in \mathbb R^2\)` define `\(\{ f_\rho: |\rho| &lt; 1 \}\)` on `\(\mathcal X = \mathbb R^2\)` by
+.small[.center[.content-box-red[
+$$
+f_\rho(\boldsymbol x) =  \frac{1}{2\pi} \exp\left({\frac{-r^2}{2(1+\rho\cos\theta)}}\right)
+$$
+]]]
+
+.small[
+1. Suppose `\(\mathcal Z = \mathcal S^{1}\)` with the normalized surface measure `\(\mu\)`
+2. `\(g\)` is a density on `\(\mathcal Y = \mathbb{R}_+\)`, and for `\(|{\rho}| &lt; 1\)`, `\(\xi_\rho: \mathcal S^1 \rightarrow \mathbb R_+\)` are given by
+$$
+g(r) = \frac{1}{2\pi} \exp\left({-\frac{r^2}{4\pi}}\right) \hspace{2cm} \text{and} \hspace{2cm} \xi_\rho(\theta) = \sqrt{\frac{2\pi}{1+\rho\cos(\theta)}}
+$$
+
+Then we can express `\(\bbox[2pt,#ff9166]{f_\rho(\boldsymbol x) = g\left(\phi_\rho(y,z)\right) = g(\phi_\rho(r,\theta))}\)` where `\(\phi_\rho:\mathcal Y \times \mathcal Z \rightarrow \mathcal Y\)` is
+`\begin{align}
+\phi_{\rho}(r,\theta) = r\xi_\rho(\theta)
+\end{align}`
+
+]
+
+---
+count: false
+layout: false
+
+# Statistical Invariance - II : .red[Example]
+
+For `\(\boldsymbol{x} = \left( r\cos\theta, r\sin\theta \right) \in \mathbb R^2\)` define `\(\{ f_\rho: |\rho| &lt; 1 \}\)` on `\(\mathcal X = \mathbb R^2\)` by
+.small[.center[.content-box-red[
+$$
+f_\rho(\boldsymbol x) =  \frac{1}{2\pi} \exp\left({\frac{-r^2}{2(1+\rho\cos\theta)}}\right)
+$$
+]]]
+
+.small[
+1. Suppose `\(\mathcal Z = \mathcal S^{1}\)` with the normalized surface measure `\(\mu\)`
+2. `\(g\)` is a density on `\(\mathcal Y = \mathbb{R}_+\)`, and for `\(|{\rho}| &lt; 1\)`, `\(\xi_\rho: \mathcal S^1 \rightarrow \mathbb R_+\)` are given by
+$$
+g(r) = \frac{1}{2\pi} \exp\left({-\frac{r^2}{4\pi}}\right) \hspace{2cm} \text{and} \hspace{2cm} \xi_\rho(\theta) = \sqrt{\frac{2\pi}{1+\rho\cos(\theta)}}
+$$
+
+Then we can express `\(\bbox[2pt,#ff9166]{f_\rho(\boldsymbol x) = g\left(\phi_\rho(y,z)\right) = g(\phi_\rho(r,\theta))}\)` where `\(\phi_\rho:\mathcal Y \times \mathcal Z \rightarrow \mathcal Y\)` is
+`\begin{align}
+\phi_{\rho}(r,\theta) = r\xi_\rho(\theta)
+\end{align}`
+
+**.red[Jacobian condition:]** `\(\displaystyle\int_{\mathcal Z}\!{\!\Psi\left( \big\lvert \text{det}J_{\phi_\rho(\cdot,z)^{-1}} \big\rvert  \right)\!\mu(dz)}\!= \int\limits_0^{2\pi}{\frac{d\theta}{\xi_\rho(\theta)^2}} = \int\limits_0^{2\pi}{\frac{1+\rho\cos\theta}{2\pi}d\theta} = 1\)`
+]
+
+---
+count: false
+layout: false
+
+# Statistical Invariance - II : .red[Example]
+
+For `\(\boldsymbol{x} = \left( r\cos\theta, r\sin\theta \right) \in \mathbb R^2\)` define `\(\{ f_\rho: |\rho| &lt; 1 \}\)` on `\(\mathcal X = \mathbb R^2\)` by
+.small[.center[.content-box-red[
+$$
+f_\rho(\boldsymbol x) =  \frac{1}{2\pi} \exp\left({\frac{-r^2}{2(1+\rho\cos\theta)}}\right)
+$$
+]]]
+
+.center[&lt;img src="images/suplevel.png" width="300",height="300"&gt;]
+
+.small.center[
+Superlevel sets `\(\{ \boldsymbol x \in \mathbb R^2 : f_\rho(\boldsymbol x) \ge  \frac{1}{2\pi}e^{-\frac{1}{2}}\}\)` for `\(\rho = 0, \frac{1}{2}, \frac{9}{10}\)`
+]
+
+
 
 ---
 layout: false
@@ -845,7 +955,7 @@ layout: false
 --
 * **.purple[Other topological summaries:]**&lt;br&gt;&lt;br&gt;
   1. *.blue[Euler characteristic:]* `\(\hspace{1.3cm}\)` `\(\mathbf S(\mathbb P^{\otimes n}) = \frac{1}{n} \ \chi\big( \mathcal K(\mathbb X_n, r_n) \big)\)`&lt;br&gt;&lt;br&gt;
-  1. *.blue[Persistent Betti numbers:]* `\(\mathbf S(\mathbb P^{\otimes n})\! =\!\!\frac{1}{n} \beta^{(r,s)}_i\big( \mathcal K(\mathbb X_n, r_n) \big), \ i\!\!=\!0,\!1 \!\dots d\)`&lt;br&gt;&lt;br&gt;
+  1. *.blue[Persistent Betti numbers:]* `\(\mathbf S(\mathbb P^{\otimes n})\! =\!\!\frac{1}{n} \beta^{(r,s)}_i\big( \mathcal K(\mathbb X_n, r_n) \big), \ i\!\!=\!0,\!1, \dots, d\)`&lt;br&gt;&lt;br&gt;
   1. *.blue[Process level summaries:]* `\(\hspace{0.075cm}\)` `\(\mathbf{S}(\mathbb P; t) \in \mathscr{D}\big([0,\infty)\big)\)`&lt;br&gt;&lt;br&gt;
   1. *.blue[Persistence diagrams:]* `\(\hspace{0.8cm}\)` `\(\mathbf{S}(\mathbb P) = \mathbf{Dgm}(\text{Filt}(\phi_{\mathbb P}))\)`&lt;br&gt;
       - e.g., `\(\phi_{\mathbb P} = K_\sigma * f_{\mathbb P}\)`, or `\(\phi_{\mathbb P} = D^K_{\mathbb P}\)`
